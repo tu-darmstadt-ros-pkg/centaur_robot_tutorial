@@ -8,3 +8,5 @@
 - git: {local-name: src/hector_vision, uri: 'https://github.com/tu-darmstadt-ros-pkg/hector_vision.git', version: catkin}
 - git: {local-name: src/hector_gazebo, uri: 'https://github.com/tu-darmstadt-ros-pkg/hector_gazebo.git', version: realistic_2d_odom}
 - git: {local-name: src/thermaleye_msgs, uri: 'https://github.com/tu-darmstadt-ros-pkg/thermaleye_msgs.git', version: master}
+- git: {local-name: src/vigir_lidar_proc, uri: 'https://github.com/team-vigir/vigir_lidar_proc.git', version: master}
+

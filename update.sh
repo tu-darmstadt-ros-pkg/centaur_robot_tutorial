@@ -59,7 +59,7 @@ Workspace initialization completed.
 You can setup your current shell's environment to use the workpace
 by entering
 
-    source ${PWD}/setup.bash
+    source ${PWD}/devel_isolated/setup.bash
 
 or by adding this command to your .bashrc file for automatic setup on
 each invocation of an interactive shell:
