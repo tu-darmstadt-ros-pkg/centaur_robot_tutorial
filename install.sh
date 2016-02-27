@@ -1,4 +1,4 @@
-
+source /opt/ros/indigo/setup.bash
 
 if ! [ -e "./.rosinstall" ]; then
   wstool init
@@ -43,10 +43,9 @@ dpkg -s $PACKAGES_TO_INSTALL 2>/dev/null >/dev/null || sudo apt-get -y install $
 
 wstool update
 
-source /opt/ros/indigo/setup.bash
 catkin_make_isolated
 
-	
+
 PWD=$(pwd)
 
 # Initialization done, print info
