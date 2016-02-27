@@ -37,6 +37,9 @@ ros-$ROS_DISTRO-octomap \
 ros-$ROS_DISTRO-octomap-msgs \
 ros-$ROS_DISTRO-octomap-ros \
 ros-$ROS_DISTRO-move-base-msgs \
+ros-$ROS_DISTRO-hector-worldmodel-msgs \
+ros-$ROS_DISTRO-rqt-joint-trajectory-controller \
+ros-$ROS_DISTRO-rqt-robot-steering \
 ros-$ROS_DISTRO-robot-localization"
 
 dpkg -s $PACKAGES_TO_INSTALL 2>/dev/null >/dev/null || sudo apt-get -y install $PACKAGES_TO_INSTALL
