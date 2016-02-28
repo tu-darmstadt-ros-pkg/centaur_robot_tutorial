@@ -11,3 +11,4 @@ Enter folder and run the update script:
 cd centaur_robot_tutorial
 ./update.sh
 ```
+The script creates a workspace, installs dependencies, clones multiple repositories and builds them using [catkin tools](https://catkin-tools.readthedocs.org/en/latest/quick_start.html)
