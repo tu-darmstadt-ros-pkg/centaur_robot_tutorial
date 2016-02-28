@@ -1,12 +1,5 @@
 source /opt/ros/indigo/setup.bash
 
-if ! [ -e "./.rosinstall" ]; then
-  wstool init
-fi
-
-wstool merge default_packages.rosinstall 
-
-
 # This should be extended to first check if everything is installed and only do the sudo requiring call when there's anything missing.
 echo "Installing needed packages (both ROS package and system dependency .deb packages) ..."
 
@@ -15,6 +8,7 @@ mercurial \
 git \
 python-rosdep \
 python-wstool \
+python-catkin-tools \
 libnlopt-dev \
 ros-$ROS_DISTRO-desktop \
 ros-$ROS_DISTRO-moveit-ros \
@@ -44,9 +38,18 @@ ros-$ROS_DISTRO-robot-localization"
 
 dpkg -s $PACKAGES_TO_INSTALL 2>/dev/null >/dev/null || sudo apt-get -y install $PACKAGES_TO_INSTALL
 
+
+if ! [ -e "./.rosinstall" ]; then
+  wstool init
+fi
+
+wstool merge default_packages.rosinstall 
+
 wstool update
 
-catkin_make_isolated
+# We build using catkin_tools per default
+#catkin_make_isolated -DCMAKE_BUILD_TYPE=Release
+catkin build -DCMAKE_BUILD_TYPE=Release
 
 
 PWD=$(pwd)
@@ -59,12 +62,12 @@ Workspace initialization completed.
 You can setup your current shell's environment to use the workpace
 by entering
 
-    source ${PWD}/devel_isolated/setup.bash
+    source ${PWD}/devel/setup.bash
 
 or by adding this command to your .bashrc file for automatic setup on
 each invocation of an interactive shell:
 
-    echo "source ${PWD}/devel_isolated/setup.bash" >> ~/.bashrc
+    echo "source ${PWD}/devel/setup.bash" >> ~/.bashrc
 
 You can also modify your workspace config (e.g. for adding additional
 repositories or packages) using the wstool command.

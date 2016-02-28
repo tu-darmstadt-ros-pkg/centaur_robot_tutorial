@@ -1,4 +1,4 @@
-# Basic installs for spawning full robot in sim
+# Basic installs for spawning full robot in gazebo
 - git: {local-name: src/hector_nist_arenas_gazebo, uri: 'https://github.com/tu-darmstadt-ros-pkg/hector_nist_arenas_gazebo.git', version: catkin}
 - git: {local-name: src/hector_centaur, uri: 'https://github.com/tu-darmstadt-ros-pkg/hector_centaur.git', version: reduced_dependencies}
 - git: {local-name: src/thor_mang_common, uri: 'https://github.com/thor-mang/thor_mang_common.git', version: master}
@@ -10,3 +10,26 @@
 - git: {local-name: src/thermaleye_msgs, uri: 'https://github.com/tu-darmstadt-ros-pkg/thermaleye_msgs.git', version: master}
 - git: {local-name: src/vigir_lidar_proc, uri: 'https://github.com/team-vigir/vigir_lidar_proc.git', version: master}
 
+# Base control
+- git: {local-name: src/vehicle_controller, uri: 'https://github.com/tu-darmstadt-ros-pkg/vehicle_controller.git', version: master}
+- git: {local-name: src/hector_move_base_msgs, uri: 'https://github.com/tu-darmstadt-ros-pkg/hector_move_base_msgs.git', version: master}
+- git: {local-name: src/monstertruck_msgs, uri: 'https://github.com/tu-darmstadt-ros-pkg/monstertruck_msgs.git', version: master}
+
+
+# (Upper body/arm) motion planning
+- git: {local-name: src/robot_self_filter, uri: 'https://github.com/team-vigir/robot_self_filter.git', version: support_multiple_collisions_geoms_per_link}
+- git: {local-name: src/vigir_perception, uri: 'https://github.com/team-vigir/vigir_perception', version: master}
+- git: {local-name: src/vigir_manipulation_planning, uri: 'https://github.com/team-vigir/vigir_manipulation_planning.git', version: master}
+- git: {local-name: src/vigir_perception_msgs, uri: 'https://github.com/team-vigir/vigir_perception_msgs', version: master}
+- git: {local-name: src/vigir_planning_msgs, uri: 'https://github.com/team-vigir/vigir_planning_msgs', version: master}
+- git: {local-name: src/vigir_ocs_msgs, uri: 'https://github.com/team-vigir/vigir_ocs_msgs', version: master}
+- git: {local-name: src/vigir_grasp_msgs, uri: 'https://github.com/team-vigir/vigir_grasp_msgs', version: master}
+- git: {local-name: src/vigir_teleop_planning_msgs, uri: 'https://github.com/team-vigir/vigir_teleop_planning_msgs', version: master}
+- git: {local-name: src/vigir_utilities, uri: 'https://github.com/team-vigir/vigir_utilities', version: master}
+
+# Unfortunately need moveit from source, otherwise octomap updater consumes extreme CPU, see
+# https://github.com/ros-planning/moveit_ros/issues/563
+- git: {local-name: src/moveit_ros, uri: 'https://github.com/skohlbr/moveit_ros.git', version: argos_tmp_fix_shape_mask }
+
+# Optional
+# thermal self filter
