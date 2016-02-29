@@ -1,3 +1,5 @@
+- git: {local-name: src/hector_centaur_demo, uri: 'https://github.com/tu-darmstadt-ros-pkg/hector_centaur_demo.git', version: master}
+
 # Basic installs for spawning full robot in gazebo
 - git: {local-name: src/hector_nist_arenas_gazebo, uri: 'https://github.com/tu-darmstadt-ros-pkg/hector_nist_arenas_gazebo.git', version: catkin}
 - git: {local-name: src/hector_centaur, uri: 'https://github.com/tu-darmstadt-ros-pkg/hector_centaur.git', version: reduced_dependencies}
@@ -16,9 +18,15 @@
 - git: {local-name: src/monstertruck_msgs, uri: 'https://github.com/tu-darmstadt-ros-pkg/monstertruck_msgs.git', version: master}
 
 
+# Base navigation
+- git: {local-name: src/hector_move_base_navigation, uri: 'https://github.com/tu-darmstadt-ros-pkg/hector_move_base_navigation.git', version:  hector_indigo_devel_catkin_merged}
+- git: {local-name: src/hector_navigation, uri: 'https://github.com/tu-darmstadt-ros-pkg/hector_navigation.git', version:  catkin}
+- git: {local-name: src/external/sbpl_lattice_planner, uri: 'https://github.com/meyerj/sbpl_lattice_planner.git', version: hydro-devel}
+
+
 # (Upper body/arm) motion planning
 - git: {local-name: src/robot_self_filter, uri: 'https://github.com/team-vigir/robot_self_filter.git', version: support_multiple_collisions_geoms_per_link}
-- git: {local-name: src/vigir_perception, uri: 'https://github.com/team-vigir/vigir_perception', version: master}
+- git: {local-name: src/vigir_perception, uri: 'https://github.com/team-vigir/vigir_perception', version: centaur}
 - git: {local-name: src/vigir_manipulation_planning, uri: 'https://github.com/team-vigir/vigir_manipulation_planning.git', version: master}
 - git: {local-name: src/vigir_perception_msgs, uri: 'https://github.com/team-vigir/vigir_perception_msgs', version: master}
 - git: {local-name: src/vigir_planning_msgs, uri: 'https://github.com/team-vigir/vigir_planning_msgs', version: master}

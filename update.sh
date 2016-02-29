@@ -18,7 +18,8 @@ ros-$ROS_DISTRO-moveit-simple-controller-manager \
 ros-$ROS_DISTRO-driver-base \
 ros-$ROS_DISTRO-laser-filters \
 ros-$ROS_DISTRO-image-proc \
-ros-$ROS_DISTRO-transport-plugins \
+ros-$ROS_DISTRO-image-transport-plugins \
+ros-$ROS_DISTRO-depth-image-proc \
 ros-$ROS_DISTRO-ros-control \
 ros-$ROS_DISTRO-ros-controllers \
 ros-$ROS_DISTRO-effort-controllers \
