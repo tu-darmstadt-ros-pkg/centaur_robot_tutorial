@@ -15,7 +15,8 @@ ros-$ROS_DISTRO-gazebo5-plugins \
 ros-$ROS_DISTRO-desktop \
 ros-$ROS_DISTRO-moveit-ros \
 ros-$ROS_DISTRO-moveit-simple-controller-manager \
-ros-$ROS_DISTRO-driver-base
+ros-$ROS_DISTRO-driver-base \
+ros-$ROS_DISTRO-laser-filters \
 ros-$ROS_DISTRO-ros-control \
 ros-$ROS_DISTRO-ros-controllers \
 ros-$ROS_DISTRO-effort-controllers \
