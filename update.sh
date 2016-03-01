@@ -15,6 +15,7 @@ ros-$ROS_DISTRO-gazebo5-plugins \
 ros-$ROS_DISTRO-desktop \
 ros-$ROS_DISTRO-moveit-ros \
 ros-$ROS_DISTRO-moveit-simple-controller-manager \
+ros-$ROS_DISTRO-moveit-setup-assistant \
 ros-$ROS_DISTRO-hector-nav-msgs \
 ros-$ROS_DISTRO-hector-map-tools \
 ros-$ROS_DISTRO-driver-base \
