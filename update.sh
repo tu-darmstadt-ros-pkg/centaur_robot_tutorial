@@ -1,5 +1,7 @@
 source /opt/ros/indigo/setup.bash
 
+git pull
+
 # This should be extended to first check if everything is installed and only do the sudo requiring call when there's anything missing.
 echo "Installing needed packages (both ROS package and system dependency .deb packages) ..."
 
