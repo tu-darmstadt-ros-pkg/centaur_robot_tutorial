@@ -23,6 +23,7 @@ ros-$ROS_DISTRO-nav-core \
 ros-$ROS_DISTRO-base-local-planner \
 ros-$ROS_DISTRO-hector-nav-msgs \
 ros-$ROS_DISTRO-hector-map-tools \
+ros-$ROS_DISTRO-message-to-tf \
 ros-$ROS_DISTRO-driver-base \
 ros-$ROS_DISTRO-laser-filters \
 ros-$ROS_DISTRO-image-proc \
