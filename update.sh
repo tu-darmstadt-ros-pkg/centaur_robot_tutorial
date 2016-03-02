@@ -19,6 +19,8 @@ ros-$ROS_DISTRO-desktop \
 ros-$ROS_DISTRO-moveit-ros \
 ros-$ROS_DISTRO-moveit-simple-controller-manager \
 ros-$ROS_DISTRO-moveit-setup-assistant \
+ros-$ROS_DISTRO-moveit-commander \
+ros-$ROS_DISTRO-moveit-planners-ompl \
 ros-$ROS_DISTRO-nav-core \
 ros-$ROS_DISTRO-base-local-planner \
 ros-$ROS_DISTRO-hector-nav-msgs \
