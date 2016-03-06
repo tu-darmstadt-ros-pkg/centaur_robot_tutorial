@@ -1,5 +1,8 @@
 # centaur_robot_tutorial
-Repo containing setup related to the 2016 Future of Rescue Simulation workshop (https://staff.fnwi.uva.nl/a.visser/activities/FutureOfRescue/)
+
+This repository provides a complete workspace setup for running a simulated centaur-style robot (humanoid upper body, in this case tracked base) in Gazebo simulation. Basic capabilities such mobile base navigation and manipulation planning are provided and directly usable as described below under "Usage".
+
+This repository among other has been used for tutorial purposes at the  to the [2016 Future of Rescue Simulation workshop] (https://staff.fnwi.uva.nl/a.visser/activities/FutureOfRescue/)
 
 # Installation
 Make sure you installed ROS Indigo as described in the [ROS Installation instructions](http://wiki.ros.org/indigo/Installation/Ubuntu).
