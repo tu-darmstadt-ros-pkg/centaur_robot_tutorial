@@ -12,9 +12,6 @@ python-rosdep \
 python-wstool \
 python-catkin-tools \
 libnlopt-dev \
-ros-$ROS_DISTRO-gazebo5-ros \
-ros-$ROS_DISTRO-gazebo5-plugins \
-ros-$ROS_DISTRO-gazebo5-ros-control \
 ros-$ROS_DISTRO-desktop \
 ros-$ROS_DISTRO-moveit-ros \
 ros-$ROS_DISTRO-moveit-simple-controller-manager \
