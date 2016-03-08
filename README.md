@@ -9,6 +9,11 @@ Make sure you installed ROS Indigo as described in the [ROS Installation instruc
 
 Add the OSRF repository to your system to allow the use of newer Gazebo versions. This is described [here](http://gazebosim.org/tutorials?tut=install_ubuntu&cat=install).
 
+Install a Gazebo version of your choice (The tutorial has been well tested with gazebo5):
+```
+sudo apt-get install ros-$ROS_DISTRO-gazebo5-ros ros-$ROS_DISTRO-gazebo5-plugins ros-$ROS_DISTRO-gazebo5-ros-control
+```
+
 Enter a folder of your choice (a good choice is the home folder) and check out this repo:
 ```
 git clone https://github.com/tu-darmstadt-ros-pkg/centaur_robot_tutorial.git
