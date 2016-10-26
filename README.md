@@ -16,7 +16,7 @@ sudo apt-get install ros-$ROS_DISTRO-gazebo5-ros ros-$ROS_DISTRO-gazebo5-plugins
 
 Enter a folder of your choice (a good choice is the home folder) and check out this repo:
 ```
-git clone https://github.com/tu-darmstadt-ros-pkg/centaur_robot_tutorial.git
+git clone https://github.com/tu-darmstadt-ros-pkg/centaur_robot_tutorial.git -b gazebo7
 ```
 Enter folder and run the update script:
 ```
