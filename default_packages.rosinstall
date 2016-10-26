@@ -38,7 +38,7 @@
 
 # Unfortunately need moveit from source, otherwise octomap updater consumes extreme CPU, see
 # https://github.com/ros-planning/moveit_ros/issues/563
-- git: {local-name: src/moveit_ros, uri: 'https://github.com/skohlbr/moveit_ros.git', version: argos_tmp_fix_shape_mask }
+# - git: {local-name: src/moveit_ros, uri: 'https://github.com/skohlbr/moveit_ros.git', version: argos_tmp_fix_shape_mask }
 
 
 # JVRC worlds from tud fork
